@@ -1,0 +1,36 @@
+.input-box {
+    width: 10rem;
+    font-size: 1rem;
+}
+
+.input-box::placeholder {
+    font-size: small;
+}
+
+.image-upload-conatiner {
+    width: 30rem;
+
+    height: 20rem;
+}
+
+.custom-button {
+    width: 5rem;
+
+    height: 5rem;
+
+    font-size: 3rem;
+
+    background-color: rgb(150, 255, 150);
+}
+
+.circle-button-list:hover {
+    background-color: rgb(150, 255, 150);
+}
+
+.h-rem-2 {
+    height: 3rem;
+}
+
+.css-1fdsijx-ValueContainer:hover {
+    background-color: rgb(150, 255, 150);
+}

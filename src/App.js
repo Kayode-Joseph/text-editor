@@ -1,25 +1,23 @@
 import logo from './logo.svg';
+import { EditorContent, useEditor } from '@tiptap/react';
 import './App.css';
+import './App.scss';
+import { TextEditorMenu } from './components/textEditorMenu/TextEditorMenu';
+import { EmbedWidget } from './components/embedWidget/EmbedWidget';
+import { ApplicationContextProvider } from './context/applicationContext/ApplicationContext';
+import { EditorScreen } from './screens/editorScreen/EditorScreen';
+import { useCustomTextEditor } from './hooks/textEditor/useCustomTextEditor';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <div className=' flex-1 d-flex p-2'>
+                <ApplicationContextProvider>
+                    <EditorScreen />
+                </ApplicationContextProvider>
+            </div>
+        </>
+    );
 }
 
 export default App;
