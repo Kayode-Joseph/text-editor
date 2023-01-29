@@ -11,7 +11,7 @@ import { useCustomTextEditor } from './hooks/textEditor/useCustomTextEditor';
 function App() {
     return (
         <>
-            <div className=' flex-1 d-flex p-2'>
+            <div className=' flex-1 d-flex p-2 position-relative'>
                 <ApplicationContextProvider>
                     <EditorScreen />
                 </ApplicationContextProvider>
