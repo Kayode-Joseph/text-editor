@@ -50,8 +50,8 @@ export const CirclePlusButton = () => {
                     />
                     <div className='p-3'></div>
                     <CirclePlusButtonListItem
-                        name={'Picture'}
-                        type={'jpeg, PNG'}
+                        name={'Social'}
+                        type={'Embed a facebook link'} //face book doesnt allow you use iframe to call their website
                         icon={WiStars({ color: 'black' })}
                     />
                     <div className='p-2'></div>
